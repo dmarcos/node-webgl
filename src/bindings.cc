@@ -21,7 +21,7 @@ void init(Handle<Object> target)
   Image::Initialize(target);
 
   NODE_SET_METHOD(target, "Init", webgl::Init);
- 
+
   NODE_SET_METHOD(target, "uniform1f", webgl::Uniform1f);
   NODE_SET_METHOD(target, "uniform2f", webgl::Uniform2f);
   NODE_SET_METHOD(target, "uniform3f", webgl::Uniform3f);
@@ -385,16 +385,16 @@ void init(Handle<Object> target)
   JS_GL_CONSTANT(FRAGMENT_SHADER);
   JS_GL_CONSTANT(VERTEX_SHADER);
   JS_GL_CONSTANT(MAX_VERTEX_ATTRIBS);
-#ifndef __APPLE__
+//#ifndef __APPLE__
   JS_GL_CONSTANT(MAX_VERTEX_UNIFORM_VECTORS);
   JS_GL_CONSTANT(MAX_VARYING_VECTORS);
-#endif
+//#endif
   JS_GL_CONSTANT(MAX_COMBINED_TEXTURE_IMAGE_UNITS);
   JS_GL_CONSTANT(MAX_VERTEX_TEXTURE_IMAGE_UNITS);
   JS_GL_CONSTANT(MAX_TEXTURE_IMAGE_UNITS);
-#ifndef __APPLE__
+//#ifndef __APPLE__
   JS_GL_CONSTANT(MAX_FRAGMENT_UNIFORM_VECTORS);
-#endif
+//#endif
   JS_GL_CONSTANT(SHADER_TYPE);
   JS_GL_CONSTANT(DELETE_STATUS);
   JS_GL_CONSTANT(LINK_STATUS);

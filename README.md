@@ -10,6 +10,13 @@ Dependencies
 - freeimage is used to load/save a variety of image formats.
 - node-gyp if not already available in your distribution
 
+You need to do 
+
+`brew install freeimage`
+`brew install glew`
+`brew install AntTweakBar`
+`brew install glfw`
+
 Installation
 ============
 `npm install node-webgl`
